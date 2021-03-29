@@ -7,14 +7,15 @@
 - GROUP BY句は結果の順序はランダム
   - 並び順をソートしたいなら、そのための指定をSELECT文でやっておくこと
 
-例：国ごとの行数を数える
+## 例
 
 ```sql
-SELECT name, COUNT(*)
-FROM users,
-GROUP BY country;
+SELECT continent, COUNT(*)
+FROM world
+GROUP BY continent;
 ```
-GROUP BYを使うことで、複数のグループに切り分けられるようになった。
+
+![group_by_1](./images/group_by_1.jpg)
 
 WHEREも使える。
 
